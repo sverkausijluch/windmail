@@ -1,0 +1,561 @@
+@media (max-width: 800px) { 
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    .container {
+        padding: 0;
+        font-size: 1.1em;
+    }
+    .second-header .search-btn {
+        margin-right: 15px;
+        font-size: 1.3em;
+    }
+    .second-header .profile-btn {
+        display: flex;
+    }
+    .second-header .profile-btn .avatar {
+        margin-right: 3px;
+        height: 30px;
+        width: 30px;
+    }
+    .second-header .profile-block .profile-menu {
+        width: 50vw;
+        margin-left: -36vw;
+    }
+    .second-header .profile-block .profile-menu ul {
+        font-size: 1.1em;
+    }
+    .second-header .profile-block .profile-menu ul li {
+        padding: 14px 10px;
+    }
+    .second-header .profile-block .name i {
+        margin-top: 0;
+    }
+    .search-block {
+    	width: 100%;
+    	margin: 15px 0;
+    }
+    .second-header .profile-block .bell {
+        margin-top: 0;
+    }
+    .settings-main .search-result {
+        display: block;
+    }
+    .cite-top .col1 {
+        width: 100%;
+    }
+    .cite-top .col2 {
+        width: 100%;
+    }
+    .cite-top .mainroomslide {
+        width: 100%;
+    }
+    .polls-flex .sections-btn {
+        padding: 0 10px;
+    }
+    .second-header .profile-block .notifications-block {
+        height: 230px;
+        width: 100vw;
+        margin-left: -79vw;
+    }
+    .cite-top .sections-btn {
+         width: 15%;   
+         position: relative;
+         text-align: left;
+    }
+    .cite-top .sections-btn i {
+        margin-top: 15vh;
+        font-size: 2em;
+    }
+    .sections-btn .section-title {
+        border: 1px solid rgba(171, 205, 239, 0.05);
+        font-size: .9em;
+        padding: 8px 10%;
+        font-weight: 400;
+        display: inline-block;
+        margin-top: 10px;
+        border-radius: 2px;
+        color: #8f8f91;
+        background: linear-gradient(0deg, rgba(171,205,239,0.07690826330532217) 0%, rgba(171,205,239,0.039653361344537785) 99%);
+    }
+    .section-search-block {
+        padding: 0px 0 10px 0;
+    }
+    .section-search {
+        padding: 15px 10%;
+        font-size: .95em;
+        margin-bottom: 5px;
+        background: #2b2c31;
+    }
+    .section-search-block .icon {
+        top: 15px;
+        left: 5%;
+        font-size: 1.05em;
+    }
+    .all-rooms .col2 {
+        width : 100%;
+        padding: 0 0 10px 0;
+        height: 100%;
+    }
+    .main-rooms {
+        padding: 20px 0;
+    }
+    .main-rooms .room {
+        width: 100%;
+        padding: 0;
+        font-size: 1em;
+    }
+    .all-rooms .room h3 {
+        margin-bottom: 8px;
+    }
+    .block-title {
+        position: relative;
+        height: auto;
+        margin-bottom: 0;
+    }
+    .block-title h3 {
+        padding: 20px 5%;
+        display: flex;
+        margin-bottom: 0;
+        height: 100%;
+    }
+    .block-title h3 .btns {
+        display: flex;
+        width: auto;
+        float: right;
+        margin-top: 10px;
+    }
+    .block-title .toggle {
+        font-size: 1.1em;
+        position: relative;
+        padding: 0px 5%;
+        top: 0;
+        left: 0;
+    }
+    .opros .block-title {
+        border-bottom: 0;
+    }
+    .opros .block-title .toggle {
+        padding: 10px 0;
+    }
+    .block-title h3 .btns .add-btn {
+        margin-right: 12px;
+        padding: 7px 5px;
+        height: 36px;
+        width: 36px;
+        margin-top: 3px;
+        font-size: 1.1em;
+        text-align: center;
+        position: relative;
+        z-index: 1;
+    }
+    .all-rooms {
+        padding-top: 10px;
+    }
+    .all-rooms .btn {
+        margin: 20px 0;
+        width: auto;
+    }
+    .all-rooms .room .room-info .author {
+    }
+    .all-rooms .room {
+        height: auto;
+        padding: 5px 5%;
+        margin-bottom: 8px;
+        font-size: 1em;
+    }
+    .opros {
+        height: 90vh;
+    }
+    .opros .col1 .list .themes li {
+        font-size: 1em;
+        padding: 8px 0;
+    }
+    .opros .poll-flex {
+        display: block;
+        padding: 0;
+    }
+    .opros .col1 {
+        width: 100%;
+        padding: 0px 0;
+        margin: 0;
+        height: 80vh;
+        overflow: hidden;
+    }
+    .opros .col2 {
+        width: 100%;
+        margin: 0 !important;
+        padding: 5px 5%;
+        border-right: 1px solid rgba(255,255,255,.05);
+    }
+    .opros .col1 .search {
+        padding: 12px 10px;
+        font-size: .95em;
+        margin-bottom: 10px;
+        border-radius: 4px !important;
+    }
+    .start-poll-icon {
+        margin: 50px 20px;
+    }
+    .opros .poll-coll {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 8px;
+    }
+    .opros .poll-coll header {
+        padding: 15px 5%;
+    }
+    .opros .poll-coll ul {
+        padding: 10px 5%;
+    }
+    .opros .poll-coll footer {
+        padding: 10px 5%;
+    }
+    .opros .poll-coll .to-comments {
+        padding: 15px 5% !important;
+    }
+    .opros .col1 .list {
+        height: 70vh;
+        padding: 0px 5%;
+        background: transparent !important;
+    }
+    .opros .col1 .block-title {
+        height: auto; 
+    }
+    .opros .col1 .toggle {
+        top: 0;
+        margin: 0;
+        left: 5%;
+        font-size: 1.1em;
+    }
+    .poll-coll .test {
+        background: transparent !important;
+        margin-top: 15px;
+    }
+    .small-container {
+        padding: 0;
+    }
+    .room-header h2 {
+        font-weight: 400;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .answers .answer {
+        display: block;
+        font-size: 1.1em;
+    }
+    .answers .answer .author {
+        color: #acacac;
+        margin-top: 0px;
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        text-align: left;
+        display: flex;
+    }
+    .answers .answer .author .author-info {
+        padding: 0 8px;
+    }
+    .answers .answer .text {
+        padding-bottom: 0;
+        width: 100%;
+        margin: 0;
+    }
+    .answers .answer .date {
+        font-size: .85em;
+        position: absolute;
+        bottom: 15px;
+    }
+    .answers .answer .author img {
+        height: 30px;
+        width: 30px;
+        -o-object-fit: cover;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+    .room-header .options {
+        font-size: 1em;
+        padding-left: 0;
+    }
+    .answers .answer p {
+        font-size: 1em;
+        margin: 0;
+    }
+    .answer .answer-btns {
+        position: relative;
+        padding: 25px 0 30px 0;
+    }
+    .options-field {
+        width: 100%;
+    }
+    .room-header .options-block {
+        padding: 15px;
+        font-size: 1.05em;
+        right: -10px;
+    }
+    .room-header .options-block ul li {
+        margin-bottom: 5px;
+    }
+    .room-cover-img {
+        height: 150px;
+        width: 100%;
+        display: block;
+        position: sticky;
+        top: 0;
+    }
+    .answer-input {
+        padding: 0;
+    }
+    .settings-main {
+        padding: 20px 5% 30px 5%;
+    }
+    .settings-main h1 {
+        font-size: 4em;
+    }
+    .settings-main .intro {
+        display: block;
+    }
+    .settings-main .col1 {
+        padding: 0 0 15px 0;
+        width: 100%;
+    }
+    .settings-main .intro .col1 ul {
+        padding-left: 0;
+        display: flex;
+    }
+    .settings-main ul li {
+        margin-right: 8px;
+    }
+    .settings-main .intro .col2 {
+        padding: 0;
+        width: 100%;
+    }
+    .settings-main .settings-form footer {
+        margin-top: 20px;
+    }
+    .settings-main .settings-form footer .send-btn {
+        border-radius: 4px;
+        padding: 10px 8px;
+        font-size: .9em;
+        width: 100%;
+        left: 50% !important;
+        font-family: inherit;
+    }
+    .send-btn {
+        width: 100%;  
+        margin-top: 0;
+    }
+    .inputWrapper .tags-select-input {
+        width: 100%;   
+    }
+    .design-select .selected-design {
+        width: 100%;
+    }
+    .design-select .select-design-btn {
+        height: 28px;
+        width: 100%;
+    }
+    .inputWrapper { 
+        display: block;   
+        margin-bottom: 25px;
+    }
+    .inputWrapper label { 
+        width: 100%;
+        margin-bottom: 8px;
+        font-size: 1em;
+    }
+    .inputWrapper label span {
+        position: relative;   
+    }
+    .settings-main .settings-form .settings-cover {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .settings-main .settings-form .settings-post-img {
+        margin-bottom: 0;
+    }
+    .big-window {
+        width: 100%;
+        margin: 0;
+        padding: 10px 5%;
+        height: 100vh;
+        overflow: scroll;
+    }
+    .big-window header h4 {
+        font-size: 1.1em;
+    }
+    .big-window .settings-form .inputWrapper {
+        margin-top: 10px;
+    }
+    .big-window .settings-form .file-input-block {
+        margin-top: 0;   
+    }
+    .big-window .settings-form .file-input-block img {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .big-window .settings-form .file-input-block .file-input {
+        border: 1px solid rgba(255,255,255,.05);
+        color: #8f8f91;
+        width: 50%;
+    }
+    .settings-form .inputWrapper input {
+        width: 100% !important;   
+        font-size: 1.2em;
+    }
+    .file-input-block input {
+        padding: 0!important;
+    }
+    .big-window main .text-btn {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .inputWrapper .tags-list {
+        width: 100%!important;   
+    }
+    .profile-cite .main-profile-header {
+        margin-top: 0;
+        height: 270px;
+    }
+    .profile-cite .content {
+        display: block;
+    }
+    .profile-cite .main-profile-header .cover {
+        position: sticky;
+        top: 0;
+    }
+    .profile-cite .main-profile-header h3 {
+        z-index: 2;
+        word-wrap: break-word;
+        width: 50%;
+    }
+    .profile-cite .col1 {
+        width: 100%;
+        padding: 0 5%;
+    }
+    .profile-cite .col2 {
+        width: 100%;
+        padding: 20px 5%;
+    }
+    .social-menu h1 {
+        margin: 20px 5%;
+        font-size: 3em;
+    }
+    .social-menu .flex-container {
+        display: block;
+    }
+    .social-menu .container .col1 {
+        width: 100%;
+    }
+    .social-menu .col1 .galaxy-block {
+        margin-left: 0;   
+    }
+    .social-menu .col1 .galaxy-block ul {
+        padding: 10px 5%;
+    }
+    .social-menu .container .col2 {
+        width: 100%;
+        padding: 0 5%;
+        margin: 20px 0;
+    }
+    .social-menu .admin-block {
+        display: block;
+    }
+    .social-menu .admin-block ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .social-menu .col1 .social-menu-ul li {
+        padding-left: 5%;
+    }
+    .error-page {
+        font-size: 1.4em;
+        padding: 10vh 5%;
+    }
+    .error-msg-header { 
+        width: 100%;   
+    }
+    .walk-img {                    
+        height: 180px;
+        width: 100%;                                                   
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .sm-container {
+        padding: 0;
+    }
+    .sm-container .register-window h1 {
+        font-size: 1.8em;    
+        margin-left: 10%;
+        writing-mode: inherit;
+        margin-top: 180px;
+    }
+    .registration-code-block {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    .registration-code-block form {
+        margin-top: 50px;
+    }
+    .registration-code-block input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 15px;
+        float: none;
+    }
+    .registration-code-block button {
+        width: 100%;
+    }
+    .text-block {
+        width: 100% !important;
+        border: 0 !important;
+    }
+    .tag-search {
+        font-size: 1.2em;
+        padding: 10px 0;
+    }
+    .tag-search-block .search-result {
+        font-size: 1.1em;
+        position: relative;
+        top: 0;
+    }
+    .tag-search-block .selected-tags {
+        margin-top: 10px;
+    }
+    .tag-search-block .selected-tags li {
+        font-size: 1em;
+        margin: 0 10px 10px 0;
+        padding: 10px 15px;
+    }
+    .tags-block {
+        margin: 20px 0;
+    }
+    .tags-block h3 {
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    .tags-block li {
+        margin: 5px 0;
+        font-size: 1.1em;
+    }
+    .chio {
+        margin: 20px 5%!important;
+    }
+    .confirm-window {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .confirm-window .send-btn {
+        left: 20%;
+        margin-left: 10px;
+    }
+    .social-menu .admin-block .access-block {
+        padding: 20px 2%;
+        width: 90%;
+    }
+    .invite-block {
+        padding: 5px 0;
+    }
+}

@@ -1,0 +1,91 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Почта ветров</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/x-icon" href="http://windmail.ru:8000/static/frontend/middle-logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link type="text/css" href="../../static/frontend/styles/auth.css" rel="stylesheet" />
+</head>
+<body>
+    <main class="sm-container auth">
+		<img src="https://sun9-30.userapi.com/impf/teFzxNae-ZmBy-HSnKi5e0FhpbLsKH6l7Aa9jQ/Z0-AcxBHusI.jpg?size=1280x960&quality=96&sign=a512d753fa7ce9d59b1fca7b39446f7d&type=album" class="auth-header">
+         <form method="post" action="" class="settings-form" autocomplete="off" id="login_form">
+             <h3>Вход</h3>
+             <p>Если вы здесь впервые, то <span class="light-text">вам следует зарегистрироваться с использованием кода, полученного от друга.</span></p>
+             {% csrf_token %}
+             <div class="inputWrapper">
+                 <label>Логин</label>
+				<div class="inputBlock">
+                    {{ form.username }}
+                </div>
+             </div>
+             <div class="inputWrapper">
+                 <label>Пароль</label>
+				 <span style="cursor: pointer;position: absolute; right: 0px;bottom: -18px;font-size: .85em;color: #8f8f91;" onClick="openEmailForm()">напомнить?</span>
+                {{ form.password }}
+             </div>
+             <button class="send-btn" type="submit">Войти</button>
+         </form>
+         <form method="post" action="" class="settings-form hide" id="email_form" autocomplete="off" onSubmit="sendEmail(event)">
+             <h3>Восстановить пароль</h3>
+             {% csrf_token %}
+             <div class="inputWrapper">
+                 <label>Логин</label>
+				<div class="inputBlock">
+                   <input placeholder="Введите здесь" name="login" id="login_field" />
+                </div>
+             </div>
+             <div class="inputWrapper">
+                 <label>Адрес</label>
+				<div class="inputBlock">
+                   <input placeholder="Введите здесь" name="email" id="email_field" />
+                </div>
+             </div>
+             <p id="email_error"></p>
+             <button class="send-btn" type="submit">Отправить письмо</button>
+         </form>
+    </main>
+</body>
+{% load static %}
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="{% static "frontend/csrftoken.js" %}"></script>
+<script>
+    const validateEmail = (email) => {
+      return email.match(
+        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      )
+    }
+    function openEmailForm(){
+        document.getElementById('login_form').classList.add('hide')
+        let email_form = document.getElementById('email_form')
+        email_form.classList.remove('hide')
+    }
+    function sendEmail(e){
+        e.preventDefault()
+        const formData = new FormData(e.currentTarget)
+        let email = document.getElementById('email_field').value
+        if(validateEmail(email)) {
+            $.ajax({
+                type: 'post',
+                url: '../emails/restore-password-operation',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function () {
+                    document.location.replace('../../password-email')
+                },
+                error: function (xhr, status, error) {
+                    console.log(JSON.parse(xhr.responseText))
+                }
+            })
+        } else {
+            document.getElementById('email_error').innerHTML='Неверный формат email'
+        }
+    }
+</script>
+</html>

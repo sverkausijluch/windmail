@@ -1,0 +1,3 @@
+const SET_IS_NEW_NOTIFS = "SET_IS_NEW_NOTIFS"
+
+export default SET_IS_NEW_NOTIFS

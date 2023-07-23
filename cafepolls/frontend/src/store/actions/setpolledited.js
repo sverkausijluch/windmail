@@ -1,0 +1,3 @@
+const SET_POLL_EDITED = "SET_POLL_EDITED"
+
+export default SET_POLL_EDITED

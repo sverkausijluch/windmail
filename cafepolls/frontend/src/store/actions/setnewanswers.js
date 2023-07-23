@@ -1,0 +1,3 @@
+const SET_NEW_ANSWERS = "SET_NEW_ANSWERS"
+
+export default SET_NEW_ANSWERS
