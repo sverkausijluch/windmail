@@ -1,0 +1,68 @@
+@media (max-width: 800px) { 
+    .documentation-page .container {
+        display: block;
+    }
+    .documentation-page .container {
+        padding: 0;   
+    }
+    .documentation-page .container .col1 {
+        width: 100%;
+        margin: 0;
+        background: rgba(26,27,32,.95);
+        top: 40px;
+        position: fixed;
+        height: 100vh;
+        overflow: auto;
+        padding: 50px 5%;
+    }
+    .documentation-page .container .col2 {
+        width : 100%;
+        margin: 0;
+        padding: 20px 5%;
+    }
+    .documentation-page header {
+        text-align: center;
+    }
+    .documentation-page .logo {
+        height: 45px;  
+        margin-top: 0px;
+    }
+    .mobile-menu-btn {
+        font-size: 2em;
+        color: #303133;
+        margin-right: 8px;
+        float: left;
+    }
+    .documentation-page .illustrations {
+        width: 100%;
+        font-size: .9em;
+        padding: 20px 0;
+    }
+    .illustration-page .article-name {
+        font-size: 1.3em;
+        writing-mode: rl;
+        width: 100vw;
+    }
+    .illustration-page {
+        display: block;
+        height: auto;
+        padding: 30px 0;
+    }
+    .illustration-page .col1 {
+        width: 100%;
+        padding: 10px 5%;
+    }
+    .illustration-page .col2 {
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+    .illustration-page .description {
+        height: auto;
+        padding: 10px 5%;
+        font-size: 1em;
+    }
+    .illustration-page .illustration {
+        height: auto;
+        width: auto;
+    }
+}

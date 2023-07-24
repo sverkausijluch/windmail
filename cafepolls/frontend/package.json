@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development ./src/index.js --output-path ./static/frontend",
-    "build": "webpack --mode production ./src/index.js --output-path ./static/frontend"
+    "build": "webpack --mode production ./src/index.js --output-path ./static/frontend",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "build": "src/"
   },
   "author": "tanya",
   "license": "ISC",
@@ -14,6 +20,7 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-loader": "^8.2.4",
+    "npm-watch": "^0.11.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "webpack": "^5.70.0",

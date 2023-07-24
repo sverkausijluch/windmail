@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CiteHeader from '../CiteHeader.js';
+import CiteHeader from '../header/CiteHeader.js';
 import mapStateToProps from '../../store/mapStateToProps.js'
 import mapDispatchToProps from '../../store/mapDispatchToProps.js'
 
